@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* .highlight {
+.highlight {
 	
 	font-size:3em;
 	color: #f7f7f7;
@@ -354,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 130px;
 	padding-bottom: 15px;
 }
- */
+
 
 .about {
 	background-image: url('../img/app_menu.jpg');
