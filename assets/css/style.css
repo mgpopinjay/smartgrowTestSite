@@ -343,20 +343,20 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 20px;
 }
 
-/*
+
 .highlight {
 	
 	font-size:3em;
 	color: #f7f7f7;
 	text-align: center;
-	position: relative;
+	/*position: relative; */
 	padding-top: 130px;
 	padding-bottom: 15px;
 }
-*/
+
 
 .about {
-	background-image: url(../img/air_node.jpg);
+	background-image: url(../img/app_menu.jpg);
 }
 
 /* Portfolio Wrap Section */
