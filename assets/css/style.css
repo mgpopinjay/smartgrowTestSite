@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 20px;
 }
 
-
+/*
 .highlight {
 	
 	font-size:3em;
@@ -352,8 +352,9 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	padding-top: 130px;
 	padding-bottom: 15px;
-
 }
+*/
+
 .about {
 	background-image: url(../img/air_node.jpg);
 }
