@@ -348,7 +348,6 @@ h1, h2, h3, h4, h5, h6 {
 	
 	font-size:3em;
 	color: #f7f7f7;
-	background-color: transparent;
 	text-align: center;
 	position: relative;
 	padding-top: 130px;
@@ -357,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .about {
-	background-image: url(../img/app_menu.jpg);
+	background-image: url(../img/air_node.jpg);
 }
 
 /* Portfolio Wrap Section */
