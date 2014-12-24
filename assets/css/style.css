@@ -61,7 +61,7 @@ textarea {
 
 
 /* ==========================================================================
-   General styles
+   General styles #f0f0f0
    ========================================================================== */
 
 html,
@@ -74,7 +74,7 @@ body {
     font-weight: 400;
     font-size: 1.4em;
     color: #000;
-    background-color: #f0f0f0;
+    background-color: transparent;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
