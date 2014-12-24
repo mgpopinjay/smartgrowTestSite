@@ -95,9 +95,10 @@
 	</div><!-- /aboutwrap -->
 	
 	<! -- NEW TEST SEPARATOR -->
-	<!-- <div class="img-holder" data-image="assets/img/app_menu.jpg">
-	
-		</div>-->
+	<div class="img-holder" data-image="assets/img/air_node.jpg">
+			<p style="-webkit-transform: translateZ(1px)">Hello world!</p>
+
+		</div>
 
 
 	<! -- ABOUT SEPARATOR -->
@@ -392,8 +393,8 @@
 	<script src="assets/js/jquery.stellar.min.js"></script>
 	<script src="assets/js/fancybox/jquery.fancybox.js"></script>    
 	<script src="assets/js/main.js"></script>
-	 <!-- <script src="assets/js/jquery.imageScroll.js"></script>-->
-	 <!-- <script src="assets/js/jquery.imageScroll.min.js"></script>-->
+	<script src="assets/js/jquery.imageScroll.js"></script>
+	<script src="assets/js/jquery.imageScroll.min.js"></script>
 
 
 		<script>
@@ -406,11 +407,14 @@
 			
 		});
 		</script>
-
+		
 		
 		
 		<script>
-			
+			$('.img-holder').imageScroll({
+		    coverRatio: 0.6
+		});
+
 		</script>
 		<script type="text/javascript">
       $(function() {
