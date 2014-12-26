@@ -306,6 +306,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 10px;
 }
 
+.landing-icon-text {
+	margin-right: 100px;
+	margin-left: 100px;
+}
 
 /* About Wrap & Conf */
 #aboutwrap {
@@ -438,7 +442,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-description {
-	text-align: center
+	text-align: center;
+	line-height: 1.3em;
 }
 
 .portfolio {
@@ -477,6 +482,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px 10px 20px;
   margin-top: 30px;
 }
+
 
 /* Service Wrap */
 #servicewrap {
