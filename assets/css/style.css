@@ -307,11 +307,10 @@ h1, h2, h3, h4, h5, h6 {
 	vertical-align: center;
 }
 
-.landing-icon-text h3{
+.landing-icon-text {
 	margin-right: 0px;
 	margin-left: 0px;
 	color: #ffffff;
-	font-weight: 300;
 }
 
 .fish-offset {
