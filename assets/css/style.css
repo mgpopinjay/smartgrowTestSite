@@ -15,6 +15,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700);
 
 html,
 button,
@@ -86,8 +87,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   MENU CONFIGURATION
+   NAV-BAR CONFIGURATION
    ========================================================================== */
+
+.navbar {
+	color: #ffffff;
+	opacity: .7;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+  font-size: 1.2em;
+  font-family: "Oswald";
+  font-weight: 300;
+} 
+
+.navbar-brand {
+	font-family: Oswald;
+	font-weight: 700;
+}
 
 .menu {
 	position: fixed;
@@ -253,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 	
 	background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) ), url(../img/gooseberry.jpg) no-repeat center top;
 	margin-top: 0px;
-	padding-top:180px;
+	padding-top:110px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -273,13 +291,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #headerwrap h1 {
 	color:#ffffff;
-	margin-top: 90px;
+	margin-top: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
 	padding-bottom: 30px;
 	letter-spacing: 8px;
-	font-size: 100px;
-	font-weight: bold;
-	text-shadow: 2px 2px 2px #000;
+	font-size: 2.5em;
+	font-weight: 700;
+	
 }
+
+.landing-icon {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
 
 /* About Wrap & Conf */
 #aboutwrap {
@@ -325,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 10px;
 	margin-left: 10px;
 	line-height: 1.4;
-	font-weight: 350;
+	font-weight: 300;
 	color: #d01c8b;
 ;
 }
@@ -423,7 +449,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
-  font-family: Arial;
+  font-family: "Oswald";
   color: #ffffff;
   font-size: 15px;
   background: #1b9e77;
@@ -431,9 +457,25 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+
 .btn:hover {
   background: #ff8c00;
   text-decoration: none;
+}
+
+.btn-transp {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 3px;
+  border: 1px;
+  font-family: "Oswald";
+  opacity: .7;
+  color: #e7298a; 
+  font-size: 1.2em;
+  font-weight: 400;
+  background: #f7f7f7;
+  padding: 10px 20px 10px 20px;
+  margin-top: 30px;
 }
 
 /* Service Wrap */

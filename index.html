@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
     <title>Smartgrow</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -30,9 +30,44 @@
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
-		
+	
+<! -- FIXED NAV BAR -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">SMARTGROW</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      
+	      
+	      <ul class="nav navbar-nav navbar-right smoothscroll">
+	        <li><a href="#about" class"smoothscroll">About</a></li>
+	         <li><a href="#portfolio" class"smoothscroll">Product</a></li>
+	         <li><a href="#services" class"smoothscroll">Team</a></li>
+	         <li><a href="#blog" class"smoothscroll">Blog</a></li>
+	         <li><a href="#contact" class"smoothscroll">Contact</a></li>
+	         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+	<!-- 
 	<!-- Menu -->
-	<nav class="menu" id="theMenu">
+	<!-- <nav class="menu" id="theMenu">
 		<div class="menu-wrap">
 			<h1 class="logo"><a href="index.html#home">SMARTGROW</a></h1>
 			<i class="fa fa-times menu-close"></i>
@@ -40,6 +75,7 @@
 			<a href="#about" class="smoothScroll">About</a>
 			<a href="#portfolio" class="smoothScroll">Product</a>
 			<a href="#services" class="smoothScroll">Team</a>
+			<a href="#blog" class="smoothScroll">Blog</a>
 			<a href="#contact" class="smoothScroll">Contact</a>
 			<a href="#"><i class="fa fa-facebook"></i></a>
 			<a href="#"><i class="fa fa-twitter"></i></a>
@@ -47,22 +83,29 @@
 			<a href="#"><i class="fa fa-envelope"></i></a>
 		</div>
 		
-		<!-- Menu button -->
+		<!-- Menu button 
 		<div id="menuToggle"><i class="fa fa-bars"></i></div>
 	</nav>
+			-->
 
 	<section id="home" name="home"></section>
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
-					<img class="logo" src="assets/img/smartgrow_bulb_transparant_full.png">
-				
+					<img class="logo" src="assets/img/smartgrow_bulb_transparant_full.png" Width="10">
 				</div>
+					<h1>INTRODUCING THE WORLD'S <br>FIRST AQUAPONIC SENSOR KIT!</br></h1>
 
-					<h1></h1>
+					<div class="landing-icon">
+						<img src="assets/img/landing-aquap-icon_white.png" Width="380">
+					</div>
+					<div>
+						<button type="button" class="btn-transp">Become an Early Adopter</button>
+					</div>
 				</div>
 			</div><! --/row -->
+			
 		</div><! --/container -->
 	</div><! --/headerwrap -->
 	
@@ -187,8 +230,7 @@
 	                            <div class="photo">
 	                            	<a class="fancybox" href="assets/img/sensors.png"><img class="img-responsive" src="assets/img/sensors.png" alt=""></a>
 	                            </div>
-
-	                        </div>    	
+			               	</div>    	
 			                    <div class="product-description">
 			                       	<h3>Wireless Aquaponic Sensor Set</h3>
 			                       	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -196,12 +238,12 @@
 		                       		<button type="button" class="btn btn-default">Order Now</button>
 
 		                       </div>
-	                           
+
 	                        </div>
 	                    </div>
 	                </div>
-
 				</div><!-- col-lg-4 -->
+			
 			</div><!-- /row -->
 	
 		</div><! --/container -->
