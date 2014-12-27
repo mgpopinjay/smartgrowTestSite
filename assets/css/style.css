@@ -277,6 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-position: center center;
 	min-height: 700px;
 	width: 100%;
+
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -401,6 +402,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
 	background-image: url(../img/app_menu.jpg);
+	background-size: cover;
+	width: 100%;
 }
 
 /* Portfolio Wrap Section */
@@ -460,6 +463,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolio {
 	background-image: url(../img/air_node.jpg);
+	background-size: cover;
+	width: 100%;
 }
 
 .btn {
@@ -568,7 +573,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-	background-image: url(../img/air_node_vert.jpg);
+	background-image: url(../img/daniel_michael_assembly.jpg);
+	background-size: cover;
+	width: 100%;
 }
 
 #contactwrap label {
