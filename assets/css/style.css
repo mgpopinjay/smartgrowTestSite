@@ -71,7 +71,7 @@ body {
 }
 
 body {
-    font-family: "Lato" sans-serif;
+    font-family: "Open Sans" sans-serif;
     font-weight: 400;
     font-size: 1.4em;
     color: #000;
@@ -82,8 +82,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Oswald", sans-serif;
-	font-weight: 300;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
 }
 
 /* ==========================================================================
@@ -98,13 +98,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-nav > li > a {
   color: #000000;
   font-size: 1.2em;
-  font-family: "Oswald";
+  font-family: "Open Sans";
   font-weight: 300;
 } 
 
 .navbar-brand {
-	font-family: Oswald;
-	font-weight: 700;
+	font-family: "Open Sans";
+	font-weight: 800;
 }
 
 .menu {
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu h1.logo a {
-	font-family: "Oswald", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 0.15em;
@@ -336,10 +336,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 15px;
 }
 .name p {
-	font-size: 22px;
-	font-weight: lighter;
-	margin-top: 15px;
-	letter-spacing: 2px;
+	font-size: 1.2em;
+	font-weight: 400;
+	margin-top: 12px;
+	
 }
 
 .name-label {
@@ -362,15 +362,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .name-desc h2 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
 	margin-top: 15px;
 	margin-right: 10px;
 	margin-left: 10px;
 	line-height: 1.4;
 	font-weight: 300;
 	color: #d01c8b;
-;
 }
 
 /* Separator About - Parallax Section */
@@ -414,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #portfoliowrap h1 {
-	font-weight: 500;
+	font-weight: 700;
 	text-align: center;
 	margin-bottom: 50px;
 	margin-top: 20px;
@@ -424,12 +423,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #portfoliowrap h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 	text-align: center;
 }
 
 #portfoliowrap p {
-	font-size: 1.2em;
+	font-size: 1em;
 	margin: 30px;
 
 }
@@ -458,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-description {
 	text-align: center;
-	line-height: 1.3em;
+	line-height: 1.2em;
 }
 
 .portfolio {
@@ -471,9 +470,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
-  font-family: "Oswald";
+  font-family: "Open Sans";
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1.2em;
   background: #1b9e77;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -490,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 0;
   border-radius: 3px;
   border: 1px;
-  font-family: "Oswald";
+  font-family: "Open Sans";
   opacity: .7;
   color: #e7298a; 
   font-size: 1.2em;
@@ -510,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #servicewrap h1 {
 	font-size: 3em;
-	font-weight: 500;
+	font-weight: 700;
 	text-align: center;
 	margin-bottom: 20px;
 	color: #1b9e77;
@@ -521,8 +520,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service small {
-	font-size: 12px;
-	font-weight: bold
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#servicewrap h3 {
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #d01c8b; 
+
+}
+
+
+.row h4 {
+	margin-top: 0px;
 }
 
 .service i {
@@ -536,6 +547,11 @@ h1, h2, h3, h4, h5, h6 {
 
 	color: #767676
 }
+
+.bio-buffer {
+	margin-top: 20px;
+}
+
 
 /* Testimonials Wrap */
 #testimonials {
