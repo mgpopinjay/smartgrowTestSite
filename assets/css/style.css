@@ -511,8 +511,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans";
   color: #ffffff;
   font-size: 1.5em;
+  font-weight: 300;
   background: #1b9e77;
-  padding: 10px 40px 10px 40px;
+  padding: 5px 40px 5px 40px;
   text-decoration: none;
 }
 
@@ -533,7 +534,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2em;
   font-weight: 400;
   background: #f7f7f7;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 20px 5px 20px;
   margin-top: 30px;
 }
 
