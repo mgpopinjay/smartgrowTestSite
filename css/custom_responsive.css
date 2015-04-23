@@ -1,0 +1,33 @@
+@media only screen and (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
+
+  .listModules {
+    width: 100%;
+  }
+
+  .listFarms {
+    left: 12px;
+    margin-right: 0;
+  }
+
+  .module {
+    width: 100%;
+  }
+
+  .farmName {
+    margin: 0;
+    text-align: center;
+  }
+
+  #moduleGraph {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .menuNavigation {
+    margin: 0 0 0 -10px;
+    border-radius: 0 5px 5px 0;
+  }
+}

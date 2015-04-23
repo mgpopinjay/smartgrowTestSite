@@ -1,315 +1,219 @@
-
-
-<!DOCTYPE HTML>
-	<head>
-		<meta charset="utf-8">
-
-		<title>Smartgrow Mobile APP - Proto.io</title>  
-
-			<meta name="HandheldFriendly" content="True">
-			<meta name="MobileOptimized" content="#width#"> 
-
-			
-			
-			
-			<meta name="viewport" content="width=device-width, minimum-scale=1.00, maximum-scale=1.00, initial-scale=1.00, user-scalable=no, target-densitydpi=device-dpi" /> 
-
-			<meta name="format-detection" content="telephone=no">
-
-
-			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/branding/apple-touch-icon-retina.png"> <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/branding/apple-touch-icon-ipad.png"/> <link rel="apple-touch-icon-precomposed" href="./assets/branding/apple-touch-icon.png"/> <link rel="shortcut icon" href="./assets/branding/apple-touch-icon.png"> 
-
-			<style>
-				body * {-webkit-text-size-adjust: 100%;}
-			</style>
-		
-
-		<meta http-equiv="cleartype" content="on"> 
-
-		
-
-				<link rel="stylesheet" href="./stylesheets/player-engine-min.css?5.12.15.0" />
-				<script type="text/javascript" src="./scripts/player-engine-min.js?5.12.15.0"></script>
-
-				
-					<script src="http://www.youtube.com/player_api"></script>
-	                <script src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/froogaloop.js"></script>
-				
-					<link type="text/css" href="./libraries/common/components.3.00.css" rel="Stylesheet" /> 
-						<script type="text/javascript" src="./libraries/common/components.js"></script> 
-				
-					<link type="text/css" href="./libraries/icons/components.3.00.css" rel="Stylesheet" /> 
-						<script type="text/javascript" src="./libraries/icons/components.js"></script> 
-				
-					<link type="text/css" href="./libraries/material/components.3.00.css" rel="Stylesheet" /> 
-						<script type="text/javascript" src="./libraries/material/components.js"></script> 
-				
-					<link type="text/css" href="./libraries/ios7/components.3.00.css" rel="Stylesheet" /> 
-						<script type="text/javascript" src="./libraries/ios7/components.js"></script> 
-				
-
-				<script type="text/javascript" src="./data/data.js"></script> 
-			
-		<style>
-			.landscape, .landscape .prx-page { min-height: 1080px; }
-			.portrait, .portrait .prx-page { min-height: 1920px; }
-		</style>
-		
-			<script type="text/javascript">
-
-				prx.spaces = false;
-
-				
-				
-					var sLinkedAssets = [];
-					
-
-				prx.url['account'] = 'https://mgpopinjay.proto.io';
-				prx.url['staticassets'] = 'https://gal.proto.io';
-
-				
-				
-					prx.device = 'default';
-				
-
-				prx.device_library = 'material';
-				prx.devices[prx.device] = {
-						name: prx.device
-						,caption: "Google Nexus 5 Android"
-						,defaultOrientation: 'portrait'
-						,portrait_applies: 1 //new
-						,portrait: [1080,1920]
-						,landscape_applies: 1 //new
-						,landscape: [1920,1080]
-						,allow_orientation_change: 1 //new
-						,statusbar_skin: 'default' // new
-						,statusbarheightportrait: 0
-						,statusbarheightlandscape: 0
-						,navigationbar_skin: 'default' //new
-						,navigationbarheightportrait: 0
-						,navigationbarheightlandscape: 0
-
-						,normalportrait: [1080,1920]
-						,normallandscape: [1920,1080]
-						,device_s3bucket: '7d1e9198-35ab-4c32-a207-aa23af9818d2'
-						,dpr: '3.00'
-
-				}
-
-
-				prx.mobilebrowser = !0; 
-				prx.iosmobilebrowser = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
-
-				prx.embed = 0;
-
-				
-				prx.filename = 'b03b19f7-07d5-432a-b7b8-b9a361756681';
-				prx.ron = '0'; // Reviewers LIVE PREVIEW is ON
-				prx.url.devices = 'https://staticprotoio-proto.netdna-ssl.com/devices';
-				prx.save = 'false'; 
-
-				prx.statusbar = '1';
-				prx.statusbarapplies = '0';
-
-				prx.navigationbar = '0';
-				prx.navigationbarapplies = '0';
-
-				prx.url.static = 'https://staticprotoio-proto.netdna-ssl.com';
-				prx.vup = '1';
-				
-					prx.v = '0';
-				
-				prx.rl = '1';
-				prx.s3b = 'mgpopinjay-155301-proto';
-				prx.projectid = 'b03b19f7-07d5-432a-b7b8-b9a361756681';
-				prx.initialpageid = false;
-				prx.deviceorientation = 'portrait';
-				prx.export2html = '1';
-
-				 
-				
-					prx.componentsHelper.getAssetUrl = function(asset) {
-						var assetType = asset.assetType;
-						var url = asset.url;
-
-						if (typeof(asset.targetSrc) != "undefined") {
-							url =  './assets/' + asset.targetSrc;
-						} else {
-							url =  './assets/' + url;
-						}
-
-						//linked assets
-						if (asset.assetType == "project") {
-							if (typeof(sLinkedAssets["pb03b19f7-07d5-432a-b7b8-b9a361756681_"+asset.fileId]) != "undefined") {
-								url = sLinkedAssets["pb03b19f7-07d5-432a-b7b8-b9a361756681_"+asset.fileId];
-							}
-						}
-
-						if (asset.assetType == "account") {
-							if (typeof(sLinkedAssets["p_"+asset.fileId]) != "undefined") {
-								url = sLinkedAssets["p_"+asset.fileId];
-							}
-						}
-
-						return url;
-					}
-				
-				
-
-
-				prx.orientation._orientation = prx.orientation.get();
-				prx.orientation.changeBody(prx.orientation._orientation);
-
-				prx.user = {'country':'ZZ'};
-
-				$(document).ready(function(){
-
-					prx.inProtoApp = (typeof(prx.utils.getCookie('appbakerIosWrapper')) != "undefined" || typeof(prx.utils.getCookie('protoAppAndroidWrapper')) != "undefined") || 0;
-					prx.inProtoIOsApp = (typeof(prx.utils.getCookie('appbakerIosWrapper')) != "undefined");
-					prx.inProtoAndroidApp = (typeof(prx.utils.getCookie('protoAppAndroidWrapper')) != "undefined");
-
-					// STATUSBAR = TOP BAR
-					if (prx.statusbarapplies == true) { // didnt work without  == true!
-						prx.allowstatusbar = true;
-					} else {
-						prx.allowstatusbar = false;
-					}
-
-					
-
-						if (!prx.inProtoApp && prx.allowstatusbar) {
-							// CHECK STATUSBAR ON IOS
-							var _agents = navigator.userAgent.toLowerCase().match(/(iphone|ipod|ipad)/g); // iOS
-							if (_agents) {
-								// if in safari, false, if in add to home, true
-								var _standalone = window.navigator.standalone ? true:false;
-								if(_standalone) {
-								 	// ANNAM 5.2.3 for ios7 translucent statusbars
-								 	// if standalone ios, always allow statusbar
-									//prx.allowstatusbar = false;
-									prx.allowstatusbar = true;
-									prx.devices[prx.device].statusbar_skin = 'default';
-									$('body').prepend("<style>.type-ios7-statusbar .ios7-statusbar-inner * { display: none; }</style>");
-								} else {
-							 		
-
-							 		// if not fullscreen then disable statusbar
-							 		if(!($(window).width() == prx.devices[prx.device][prx.orientation._orientation][0] && $(window).height() == prx.devices[prx.device][prx.orientation._orientation][1])) {
-										prx.allowstatusbar = false;
-							 		}
-							 	}
-							}
-
-							// CHECK STATUSBAR ON ANDROID
-							
-							try {
-								_agents = navigator.userAgent.toLowerCase().match(/(android)/g); // Android
-								if (_agents) {
-									// if not fullscreen then disable statusbar
-							 		if(!($(window).width() == prx.devices[prx.device][prx.orientation._orientation][0] && $(window).height() == prx.devices[prx.device][prx.orientation._orientation][1])) {
-										prx.allowstatusbar = false;
-							 		}
-								}
-							} catch(err) {alert(err)}
-						}
-					
-
-
-					// NAVIGATION BAR = BOTTOM BAR
-					if (prx.navigationbarapplies) {
-						prx.allownavigationbar = true;
-					} else {
-						prx.allownavigationbar = false;
-					}
-
-					
-					var _agents = navigator.userAgent.toLowerCase().match(/(android)/g);
-					if (_agents) {
-						try {
-							if(!($(window).width() == prx.devices[prx.device][prx.orientation._orientation][0] && $(window).height() == prx.devices[prx.device][prx.orientation._orientation][1])) {
-								prx.allownavigationbar = false;
-					 		}
-				 		} catch(err) {alert(err)}
-				 		$('body').prepend("<style>.prx-page { position: absolute!important; }</style>");
-					}
-					
-
-					prx.youtube.ini();
-
-
-					$('#dragarea').css('width',$(window).width()+'px');
-					$('#dragarea').css('height',$(window).height()+'px');
-
-					if (typeof(prx.xdata) != "undefined") {
-						prx.xdata = $.toJSON(prx.xdata);
-					}
-
-					prx.s3Links = {};
-
-					prx.loading.load(prx.filename);
-
-					
-
-				});
-			</script>
-		
-	</head>
-
-	<body oncontextmenu="return false;" class="player device-cursor-touch" style="overflow: hidden; width: 1080px; height: 1920px;" id="mbd">
-
-		
-		
-		<div id="window-wrapper" style="width: 100%; height: 100%; overflow: hidden; position: relative">
-			<div id="dragarea" style="display:none;"></div>
-			<div id="statusbar"></div>
-
-			<div class="prx-page" data-role="page" id="p-1" data-id="1"></div> <div class="prx-page" data-role="page" id="p-2" data-id="2"></div> <div class="prx-page" data-role="page" id="p-3" data-id="3"></div> <div class="prx-page" data-role="page" id="p-4" data-id="4"></div> 
-			<div id="navigationbar"></div>
-
-
-			<div id="overlay" style="position: absolute; top:0px;left:0px;"></div> <div id="trash" style="position: absolute; left:0px; display: none;"></div>
-
-
-
-		</div>
-
-		
-
-        	<div id="loader-wrapper">
-				
-
-				<div class="progress">
-					<div class="progress-bar"></div>
-				</div>
-				<div id="poweredby"></div>
-			</div>
-
-			
-				<style>
-					#loader-wrapper #poweredby {
-					background-image: url('images/player/madewithproto.png') !important;
-					}
-
-					@media (min-width: 481px) and (max-width:1079px)  {
-					 #loader-wrapper #poweredby {
-					 background-image: url('images/player/madewithproto@2x.png') !important;
-					 height:32px;
-					 }
-					}
-					@media (min-width: 1080px) {
-						 #loader-wrapper #poweredby {
-						 background-image: url('images/player/madewithproto@3x.png') !important;
-						 height:48px;
-						 }
-					}
-					@media (width: 1280px) and (height: 768px) {
-						 #loader-wrapper #poweredby {
-						 background-image: url('images/player/madewithproto.png') !important;
-						 height:32px ;
-						 }
-					}
-				</style>
-			
-
-	</body>
-</html> 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/openweather.css">
+      <link rel="stylesheet" href="css/jquery.sidr.light.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/custom_responsive.css">
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header">
+      <div class="content">
+        <span id="left-menu" href="#left-menu" class="menuNavigation icon-th-menu"></span>
+        <h1 class="farmName">
+          Red House
+        </h1>
+      </div>
+    </div>
+    <div class="body">
+      <div class="content">
+        <div class="listModules">
+          <!-- Fish module -->
+          <div class="tankModule tankFish">
+            <div class="tankTitle">
+              <h2>Fish Tank 1</h2>
+            </div>
+            <!-- Tank tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li><a href="#TabGraph-1-PH" class="tankProperty growUp" role="tab" data-toggle="tab">
+                <span class="tankType">pD</span>
+                <span class="tankValue green">6.72</span>
+              </a></li>
+              <li><a href="#TabGraph-1-Temp" role="tab" class="tankProperty growDown" data-toggle="tab">
+                <span class="tankType">DO</span>
+                <span class="tankValue yellow">22.3</span>
+              </a></li>
+              <li class="active"><a href="#TabGraph-1-DO" role="tab" class="tankProperty growUp" data-toggle="tab">
+                <span class="tankType">EC</span>
+                <span class="tankValue red">4</span>
+              </a></li>
+            </ul>
+            <!-- Tank graphs -->
+            <div class="tab-content">
+              <div class="tab-pane" id="TabGraph-1-PH">
+                <div id="moduleGraph" class="module">
+                  <div id="container" style="min-width: 320px; width: 100%;  height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+              <div class="tab-pane" id="TabGraph-1-Temp">
+                <div id="moduleGraph2" class="module">
+                  <div id="container2" style="min-width: 320px; width: 100%;  height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+              <div class="tab-pane active" id="TabGraph-1-DO">
+                <div id="moduleGraph3" class="module">
+                  <div id="container3" style="min-width: 320px; width: 100%;  height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fish module -->
+          <div class="tankModule tankFish">
+            <div class="tankTitle">
+              <h2>Fish Tank 2</h2>
+            </div>
+            <!-- Tank tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li><a href="#TabGraph-2-PH" class="tankProperty growDown" role="tab" data-toggle="tab">
+                <span class="tankType">pD</span>
+                <span class="tankValue green">5.72</span>
+              </a></li>
+              <li><a href="#TabGraph-2-Temp" role="tab" class="tankProperty growUp" data-toggle="tab">
+                <span class="tankType">DO</span>
+                <span class="tankValue yellow">20.3</span>
+              </a></li>
+              <li><a href="#TabGraph-2-DO" role="tab" class="tankProperty growUp" data-toggle="tab">
+                <span class="tankType">EC</span>
+                  <span class="tankValue red">5</span>
+              </a></li>
+            </ul>
+            <!-- Tank graphs -->
+            <div class="tab-content">
+              <div class="tab-pane" id="TabGraph-2-PH">
+                <div id="moduleGraph4" class="module">
+                  <div id="container4" style="min-width: 320px; width: 100%;  height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+              <div class="tab-pane" id="TabGraph-2-Temp">
+                <div id="moduleGraph5" class="module">
+                  <div id="container5" style="min-width: 320px; width: 100%;  height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+              <div class="tab-pane" id="TabGraph-2-DO">
+                <div id="moduleGraph6" class="module">
+                  <div id="container6" style="min-width: 320px; width: 100%;  height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grow module -->
+          <div class="tankModule tankGrow">
+            <div class="tankTitle">
+              <h2>Grow bed 1</h2>
+            </div>
+            <!-- Tank tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li><a href="#TabGraph-3-PH" class="tankProperty growUp" role="tab" data-toggle="tab">
+                <span class="tankType">Light</span>
+                <span class="tankValue green">22410</span>
+              </a></li>
+              <li><a href="#TabGraph-3-Temp" role="tab" class="tankProperty growDown" data-toggle="tab">
+                <span class="tankType">°C</span>
+                <span class="tankValue yellow">21.3</span>
+              </a></li>
+              <li><a href="#TabGraph-3-DO" role="tab" class="tankProperty growUp" data-toggle="tab">
+                <span class="tankType">Humidity</span>
+                  <span class="tankValue red">53%</span>
+              </a></li>
+            </ul>
+            <!-- Tank graphs -->
+            <div class="tab-content">
+              <div class="tab-pane" id="TabGraph-3-PH">
+                <div id="moduleGraph7" class="module">
+                  <div id="container7" style="min-width: 320px; width: 100%; height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+              <div class="tab-pane" id="TabGraph-3-Temp">
+                <div id="moduleGraph8" class="module">
+                  <div id="container8" style="min-width: 320px; width: 100%; height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+              <div class="tab-pane " id="TabGraph-3-DO">
+                <div id="moduleGraph9" class="module">
+                  <div id="container9" style="min-width: 320px; width: 100%; height: 120px; margin: 0 auto"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grow module -->
+            <div class="tankModule tankGrow">
+              <div class="tankTitle">
+                <h2>Grow bed 2</h2>
+              </div>
+              <!-- Tank tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li><a href="#TabGraph-4-PH" class="tankProperty growUp" role="tab" data-toggle="tab">
+                  <span class="tankType">Light</span>
+                  <span class="tankValue green">11510</span>
+                </a></li>
+                <li><a href="#TabGraph-4-Temp" role="tab" class="tankProperty growDown" data-toggle="tab">
+                  <span class="tankType">°C</span>
+                  <span class="tankValue green">21.0</span>
+                </a></li>
+                <li><a href="#TabGraph-4-DO" role="tab" class="tankProperty growDown" data-toggle="tab">
+                  <span class="tankType">Humidity</span>
+                    <span class="tankValue yellow">59%</span>
+                </a></li>
+              </ul>
+              <!-- Tank graphs -->
+              <div class="tab-content">
+                <div class="tab-pane" id="TabGraph-4-PH">
+                  <div id="moduleGraph10" class="module">
+                    <div id="container10" style="min-width: 310px; width: 100%; height: 120px; margin: 0 auto"></div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="TabGraph-4-Temp">
+                  <div id="moduleGraph11" class="module">
+                    <div id="container11" style="min-width: 310px; width: 100%; height: 120px; margin: 0 auto"></div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="TabGraph-4-DO">
+                  <div id="moduleGraph12" class="module">
+                    <div id="container12" style="min-width: 310px; width: 100%; height: 120px; margin: 0 auto"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="js/vendor/jquery.sidr.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,367 @@
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url("../fonts/bebasneue-webfont.eot");
+  src: url("../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue-webfont.woff") format("woff"), url("../fonts/bebasneue-webfont.ttf") format("truetype"), url("../fonts/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon-6.eot?-67yv4o");
+  src: url("../fonts/icomoon-6.eot?#iefix-67yv4o") format("embedded-opentype"), url("../fonts/icomoon-6.woff?-67yv4o") format("woff"), url("../fonts/icomoon-6.ttf?-67yv4o") format("truetype"), url("../fonts/icomoon-6.svg?-67yv4o#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_leaves:before, .tankGrow .tankTitle h2:before {
+  content: "\e601";
+}
+
+.icon-icon-_dolphin:before, .tankFish .tankTitle h2:before {
+  content: "\e602";
+}
+
+.icon-th-menu:before {
+  content: "\e600";
+}
+
+.blue {
+  color: blue;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.red {
+  color: red;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 5px 2px red;
+  }
+
+  100% {
+    box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.3);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.3);
+  }
+
+  50% {
+    -webkit-box-shadow: 0 0 5px 2px red;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.3);
+  }
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4c826b), color-stop(1, #1e322f));
+  background-image: -o-linear-gradient(bottom, #4c826b 0%, #1e322f 100%);
+  background-image: -moz-linear-gradient(bottom, #4c826b 0%, #1e322f 100%);
+  background-image: -webkit-linear-gradient(bottom, #4c826b 0%, #1e322f 100%);
+  background-image: -ms-linear-gradient(bottom, #4c826b 0%, #1e322f 100%);
+  background-image: linear-gradient(to bottom, #4c826b 0%, #1e322f 100%);
+  font-family: "bebas_neueregular", Arial, sans-serif;
+}
+
+.body {
+  padding: 10px 0 50px 0;
+}
+
+.header {
+  text-align: center;
+  background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #003728), color-stop(1, #3a7a62), color-stop(1, #3f7e67), color-stop(1, #20634b), color-stop(1, #75b09f));
+  background-image: -o-linear-gradient(right, #003728 0%, #3a7a62 100%, #3f7e67 100%, #20634b 100%, #75b09f 100%);
+  background-image: -moz-linear-gradient(right, #003728 0%, #3a7a62 100%, #3f7e67 100%, #20634b 100%, #75b09f 100%);
+  background-image: -webkit-linear-gradient(right, #003728 0%, #3a7a62 100%, #3f7e67 100%, #20634b 100%, #75b09f 100%);
+  background-image: -ms-linear-gradient(right, #003728 0%, #3a7a62 100%, #3f7e67 100%, #20634b 100%, #75b09f 100%);
+  background-image: linear-gradient(to right, #003728 0%, #3a7a62 100%, #3f7e67 100%, #20634b 100%, #75b09f 100%);
+  color: #fff;
+  height: 43px;
+}
+.header .content:before {
+  content: "\e601";
+  position: absolute;
+  left: 30px;
+  top: 5px;
+  font-family: 'icomoon';
+  font-size: 32px;
+}
+
+.content {
+  width: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.inactive {
+  background: transparent !important;
+}
+
+.farmName {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  font: 31px/40px "bebas_neueregular", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.farmName:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: url("../img/icons/icon-corner.png") no-repeat center center;
+}
+
+.menuNavigation {
+  float: left;
+  margin-left: -5px;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.listFarms {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.listFarms {
+  position: absolute;
+  left: 10px;
+  top: 45px;
+  width: 40px;
+  min-width: 40px;
+}
+.listFarms.fixed {
+  position: fixed;
+  top: 10px;
+}
+
+.listModules {
+  width: 750px;
+}
+.listModules.fixed {
+  margin-left: 0;
+}
+
+.tankTitle {
+  background: #231f21;
+  text-align: center;
+}
+.tankTitle h2 {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  font-size: 21px;
+  color: #fff;
+}
+
+.tankProperties {
+  padding: 0;
+}
+
+.tankProperty {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+  text-align: center;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  -ms-transition: background .3s ease-in-out;
+  -o-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+.tankProperty.growDown {
+  padding-right: 20px;
+}
+.tankProperty.growDown:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  width: 15px;
+  height: 20px;
+  background: url("../img/icons/icon-growarrow.png") no-repeat -17px 0;
+}
+.tankProperty.growUp {
+  padding-right: 20px;
+}
+.tankProperty.growUp:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  width: 15px;
+  height: 20px;
+  background: url("../img/icons/icon-growarrow.png") no-repeat 0 1px;
+}
+
+.tankType {
+  font-size: 12px;
+  color: #fff;
+}
+
+.tankValue {
+  display: block;
+  font-size: 20px;
+  line-height: 15px;
+}
+.tankValue.green {
+  color: #33c210;
+}
+.tankValue.yellow {
+  color: #d9cc11;
+}
+.tankValue.red {
+  color: #b5170f;
+}
+
+.tankModule {
+  margin-bottom: 10px;
+}
+
+.tankFish .tankTitle h2:before {
+  position: absolute;
+  left: -55px;
+  top: 5px;
+  font-size: 13px;
+  font-family: 'icomoon';
+}
+
+.tankGrow .tankTitle h2:before {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  font-size: 13px;
+  font-family: 'icomoon';
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: #1c3f33;
+  border: 0;
+}
+
+.nav-tabs > li > a {
+  text-align: center;
+  padding: 5px 20px 5px 5px;
+  border: 0;
+  border-radius: 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: none;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.farmAvailable {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #1eacc0;
+}
+.farmAvailable img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.farmAvailable.label-primary {
+  background: #fff;
+}
+
+.farmWarning {
+  -webkit-animation: pulse 2s infinite ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.farmActive:after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: 16px;
+  background: #f49f4e;
+  border: 1px solid #dd944f;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.module {
+  width: 100%;
+  height: 120px;
+  background: #1f4e40;
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.sidr {
+  width: 70px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #003728;
+}
+
+.label-primary[href]:hover, .label-primary[href]:focus {
+  background-color: #fff;
+}
+
+.glyphicon {
+  z-index: 9999;
+}
+
+.glyphicon-pencil {
+  color: #545454;
+}

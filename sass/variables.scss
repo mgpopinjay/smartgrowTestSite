@@ -1,0 +1,27 @@
+//Variable colors
+.blue {
+  color: blue;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+.red {
+  color: red;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+@keyframes pulse {
+	0% { box-shadow: 0 0 5px 2px rgba(255,0,0,0.3); }
+	50% { box-shadow: 0 0 5px 2px rgba(255,0,0,1); }
+	100% { box-shadow: 0 0 5px 2px rgba(255,0,0,0.3); }
+}
+@-webkit-keyframes pulse {
+	0% { -webkit-box-shadow: 0 0 5px 2px rgba(255,0,0,0.3); }
+	50% { -webkit-box-shadow: 0 0 5px 2px rgba(255,0,0,1); }
+	100% { -webkit-box-shadow: 0 0 5px 2px rgba(255,0,0,0.3); }
+}
